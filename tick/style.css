@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+.container{
+        background-color: rgba(12, 199, 140, 0.918);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+}
+#btn{
+    /* border: 1px solid rgb(149, 146, 146); */
+    border: 0;
+    outline: none;
+    padding: 5px 30px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 10px;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgb(135, 24, 209) 0%, rgb(229, 33, 124) 50%, rgb(235, 154, 40) 100%);
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+   
+}
+#btn:hover{
+    transform: scale(1.01);
+    box-shadow: 0 10px 10px 0 rgba(93, 93, 93, 0.24), 0 15px 50px 0 rgba(116, 74, 74, 0.19);
+
+
+}
+.popUp{
+
+    position: absolute;
+    width: 220px;
+    height: 40vh;
+    background-color: white;
+    left: 50%;
+    right: 50%;
+    padding: 0px 35px 0px 35px ;
+    transform: translate(-50%,-50%)scale(0.1);
+    top: 0;
+    text-align: center;
+    border-radius: 5px;
+    visibility: hidden;
+    transition: translate 0.4s, top 0.4s;
+
+}
+.open-PopUp{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+
+}
+
+.popUp img{
+   width: 60px;
+    margin-top: -40px;
+    margin-bottom: 5px;
+}
+.popUp img:hover{
+    width: 62px;
+    margin-top: -40px;
+    margin-bottom: 5px;
+}
+
+.popUp h1{
+    margin: 15px 0;
+    font-size: 20px;
+}
+.popUp p {
+    font-size: 10px;
+    margin-bottom: 20px;
+    opacity: .8;
+}
+#ok-btn{
+    outline: none;
+    border: 0;
+    color: white;
+    background-color: rgb(75, 212, 75);
+    width: 100%;
+    padding:5px;
+    font-size: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#ok-btn:hover{
+    background-color: rgb(13, 196, 13);
+    transition: background-Color 0.4s;
+    cursor: pointer;
+    
+    
+}
+
+
+
