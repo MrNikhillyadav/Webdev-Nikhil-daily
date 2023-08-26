@@ -1,0 +1,156 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Anek Latin', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    
+}
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.left{
+    width: 45%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+
+    
+}
+
+/* 4 lines of code to center any element */
+.left .text-center{
+    position: absolute;
+    top:-1%;
+    left: 50%;
+    transform: translate(-50%,50%); 
+
+}
+.text-center a{
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(5, 5, 255);
+    
+    
+}
+.text-center h2{
+    font-size: 30px;
+    opacity: .5;
+}
+.text-center h1{
+    font-size: 75px;
+    margin: 8px 0;
+    letter-spacing: 2px;
+    color: blue;
+    
+}
+.r-topl{
+    background-image: url(https://images.unsplash.com/photo-1628329336337-8c33a8f08ec1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ5fHxhbmltYXRpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+
+    background-position: center;
+    background-size: cover;
+}
+.r-topr{
+    background-image: url(https://images.unsplash.com/photo-1640595635946-cf301352aa38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjA0fHxhbmltYXRpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: bottom;
+    background-size: cover;
+}
+.right-bottom{
+    /* to fit imgae inside a given div */
+    background-image: url(https://images.unsplash.com/photo-1510781765356-7997f62e695b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60);
+    background-position: center ;
+    background-size:cover;
+    
+}
+.text-center p{
+    opacity: .5;
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+.lnav{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lnav-r a{
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(54, 53, 53);
+
+}
+#search-icon {
+    color: rgb(38, 38, 39);
+    font-size: 22px;
+    margin-left: 5px;
+    /* border: 2px solid grey;
+    border-radius: 50%;
+    padding: 4px; */
+    
+}
+.lnav-r i {
+    color: rgb(36, 36, 36);
+    font-size: 20px;
+}
+.right{
+    width: 55%;
+    height: 100%;
+    /* background-color: rgb(247, 255, 249); */
+}
+.right .right-bottom{
+    background-color: rgb(255, 89, 5);
+    width: 100%;
+    height: 50%;
+}
+.right .right-top{
+    /* background-color: rgb(255, 255, 255); */
+    width: 100%;
+    height: 50%;
+    display: flex; /* VERY Important */
+}
+
+.right-top .r-topl{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(246, 207, 155);
+}
+.right-top .r-topr{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(246, 16, 177);
+}
+
+#socials{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    
+
+}
+#socials a{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    /* to make a circular container for icons */
+    border: 2px solid rgb(55, 55, 55);
+    border-radius: 50%;
+    margin-right: 8px;  
+}
+
+ /* to make design responsive */
+@media (max-width:500px){
+    .container{
+        flex-direction: column;
+    }
+}
+
